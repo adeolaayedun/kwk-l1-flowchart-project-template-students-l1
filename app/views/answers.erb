@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Know Yourself!</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body background="https://art.pixilart.com/ef8096794ca0d2c.png">
+<h1 id='finalResult'>random answer goes here</h1>
+<script>
+  let num1 = Math.floor(Math.random()*3);
+  console.log(num1);
+  if (num1 === 0) {
+    document.getElementById('finalResult').innerHTML = 'You are above average';
+  } else if (num1 === 1) {
+    document.getElementById('finalResult').innerHTML = 'You are so basic';
+  } else if (num1 === 2) {
+    document.getElementById('finalResult').innerHTML = 'You are below average';
+  };
+</script>
+
+</body>
+
+</html>
